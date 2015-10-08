@@ -1,0 +1,13 @@
+{% extends '../master/layout.html' %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block menu %}
+	{% include '../components/topmenu.html' %}
+{% endblock %}
+
+{% block content %}
+
+	{{ markdown() }}
+
+{% endblock %}
