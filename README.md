@@ -1,9 +1,10 @@
-# generator-crust [![Build Status](https://secure.travis-ci.org/teltploek/generator-crust.png?branch=master)](https://travis-ci.org/teltploek/generator-crust)
+# generator-crust
 
 > [Yeoman](http://yeoman.io) generator
 
-
 ## Getting Started
+
+Coming soon...
 
 ### What is Yeoman?
 
