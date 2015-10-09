@@ -45,6 +45,10 @@ module.exports = yeoman.generators.Base.extend({
 
     projectfiles: function () {
       this.fs.copy(
+        this.templatePath('gitattributes'),
+        this.destinationPath('.gitattributes')
+      );
+      this.fs.copy(
         this.templatePath('gitignore'),
         this.destinationPath('.gitignore')
       );
@@ -59,6 +63,14 @@ module.exports = yeoman.generators.Base.extend({
       this.fs.copy(
         this.templatePath('htaccess'),
         this.destinationPath('.htaccess')
+      );
+      this.fs.copy(
+        this.templatePath('bowerrc'),
+        this.destinationPath('.bowerrc')
+      );
+      this.fs.copy(
+        this.templatePath('_bower.json'),
+        this.destinationPath('bower.json')
       );
     }
   },
