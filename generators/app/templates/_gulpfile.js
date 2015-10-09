@@ -180,8 +180,9 @@ gulp.task('watch', ['images','graphics','connect'], function () {
 
   // watch for changes
   gulp.watch([
-    'app/*.html',
-    'app/scripts/**/*.js',
+    '.tmp/**/*.html',
+    '.tmp/**/*.js',
+    '.tmp/**/*.css'
     ]).on('change', $.livereload.changed);
 
   gulp.watch('app/images/**/*.*', ['images']);
