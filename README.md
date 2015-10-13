@@ -1,10 +1,57 @@
 # generator-crust
 
-> [Yeoman](http://yeoman.io) generator
+This generator will provide you with a jump start to new [Crust](https://github.com/PentiaLabs/crust-io) projects.
 
 ## Getting Started
 
-Coming soon...
+#### Prerequisites
+
+You need to have [Bower](http://bower.io) and [Yeoman](http://yeoman.io) installed on your system.
+
+```bash
+npm install -g bower
+npm install -g yo
+```
+
+And then this generator:
+
+```bash
+npm install -g generator-crust
+```
+
+#### Initiating the crust generator:
+
+Create a new folder, cd into it and run:
+
+```bash
+yo crust
+```
+
+Follow the instructions.
+
+#### Developer workflow
+
+When you'd like to develop on your sources run:
+
+```bash
+gulp serve
+```
+
+Open up your favorite IDE, do changes and point your browser to http://localhost:4200
+
+If you're in doubt about the general crust file structure, take a look at the crust instructions [here](https://github.com/PentiaLabs/crust-io)
+
+#### Building for production
+
+When you'd like to develop on your sources run:
+
+```bash
+gulp
+```
+
+This will create a static HTML-representation of your content merged with your templates ready to ship inside the dist-folder in the project root.
+
+***
 
 ### What is Yeoman?
 
