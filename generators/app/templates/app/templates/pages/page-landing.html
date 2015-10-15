@@ -1,0 +1,45 @@
+{% extends '../master/layout.html' %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block pagetype %}
+  <div class="container">
+    <div class="masthead">
+      <h3 class="text-muted">Crust starter template</h3>
+
+      <nav>
+        <ul class="nav nav-justified">
+          <!-- In Crust you can do pretty much whatever you want regarding rendering of menus. You get the entire source structure for each page on each compile, so you can traverse it an present it however you want. -->
+          {% include '../components/menu.html' %}
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+      {{ crust_heading }}
+      
+      {{ crust_headinghtml }}
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 feature-block">
+        <div class="feature-block__appstract">
+          {{ crust_leftside }}
+        </div>
+        {{ crust_leftsidehtml }}
+      </div>
+      <div class="col-md-6 feature-block">
+        <div class="feature-block__appstract">
+          {{ crust_rightside }}
+        </div>
+        {{ crust_rightsidehtml }}
+     </div>
+    </div>
+
+    <footer class="footer">
+      <p> ❤ Pentia 2015</p>
+    </footer>
+
+  </div>
+{% endblock %}

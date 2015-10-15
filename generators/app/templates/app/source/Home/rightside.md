@@ -1,0 +1,3 @@
+## Permalinking
+
+You can also do permalinking inside your Crust templates. Put a permalink token inside the config.yaml as described [here](https://github.com/PentiaLabs/crust-io#dynamic-linking) and a Crust-link-placeholder inside your template file, and the path to the page will automatically be inserted upon compilation - you can do whatever you like with the titling of the page - the link will still work!
