@@ -188,7 +188,7 @@ gulp.task('watch', ['images','graphics','connect'], function () {
   gulp.watch('app/images/**/*.*', ['images']);
   gulp.watch('app/graphics/**/*.*', ['graphics']);
   gulp.watch('app/styles/**/*.scss', ['styles']);
-  gulp.watch(['app/templates/**/*.html', 'app/source/**/*.md', 'app/source/**/*.yaml'], ['crust']);
+  gulp.watch(['app/templates/**/*.html', 'app/source/**/*.md', 'app/source/**/*.html', 'app/source/**/*.yaml'], ['crust']);
   gulp.watch('bower.json', ['wiredep']);
 });
 
