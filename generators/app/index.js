@@ -72,6 +72,10 @@ module.exports = yeoman.generators.Base.extend({
         this.templatePath('_bower.json'),
         this.destinationPath('bower.json')
       );
+      this.fs.copy(
+        this.templatePath('_web.config'),
+        this.destinationPath('_web.config')
+      );
     }
   },
 
